@@ -4,14 +4,14 @@ public class Node {
     public Node next;
 
     public Node(Node next) {
-        next = this.next;
+        this.next = next;
     }
 
-    public Node getNextNode(){
-        return next;
+    public Node getNext(Node x){
+        return x.next;
     }
 
-    public setNextNode(Node next) {
-
+    public void setNext(Node y, Node x) {
+        x.next = y;
     }
 }
